@@ -1,0 +1,9 @@
+*.log
+*.bin
+*.pth
+*.safetensors
+
+dataset/
+
+**/__pycache__
+**/.vscode
