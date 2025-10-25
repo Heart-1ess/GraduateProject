@@ -19,6 +19,7 @@ from sklearn.metrics import accuracy_score, precision_recall_fscore_support, roc
 from transformers import XLMRobertaTokenizerFast
 import matplotlib.pyplot as plt
 from tqdm import tqdm
+from pathlib import Path
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -26,6 +27,7 @@ ROOT_DIR = "/home/zhangshuhao/projects/ys/Graduate"
 DATASET_PATH = os.path.join(ROOT_DIR, "dataset/pheme_source.csv")
 LOCAL_ROBERTA_PATH = os.path.join(ROOT_DIR, 'model/hpm_adm_dual/roberta-base')
 
+sys.path.append(os.path.join(ROOT_DIR, 'model/hpm_adm_dual'))
 # Import the dual model
 from hpm_adm_dual.model import DualChannelModel
 from hpm_adm_dual.dataset import DualModelDataset
@@ -34,7 +36,7 @@ from hpm_adm_dual.utils import *
 # Training parameters
 BATCH_SIZE = 16
 LEARNING_RATE = 2e-5
-EPOCHS = 10
+EPOCHS = 20
 MAX_LENGTH = 128
 EMOTION_DIM = 3  # Based on sentiment model output
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')

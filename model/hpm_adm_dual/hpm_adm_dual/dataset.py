@@ -4,8 +4,12 @@ from tqdm import tqdm
 
 import sys
 from pathlib import Path
+import os
 
-sys.path.append(Path(__file__).parent.resolve())
+ROOT_DIR = "/home/zhangshuhao/projects/ys/Graduate"
+
+# Add model directory to path
+sys.path.append(os.path.join(ROOT_DIR, 'model/hpm_adm_dual/hpm_adm_dual'))
 from utils import *
 
 # Training parameters
