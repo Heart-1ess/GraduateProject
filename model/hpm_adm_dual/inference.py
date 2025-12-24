@@ -44,7 +44,7 @@ attention_mask = inputs["attention_mask"]
 
 # 加载模型
 model = DualChannelModel()
-model.load_state_dict(torch.load(os.path.join(ROOT_DIR, 'model/hpm_adm_dual/hpm_adm_dual/best_model20251024_10epoch_loss0.1330_mse0.0165_auc0.9756.pth')))
+model.load_state_dict(torch.load(os.path.join(ROOT_DIR, 'model/hpm_adm_dual/hpm_adm_dual/best_model20251025_20epoch_loss0.1194_mse0.0101_auc0.9736.pth')))
 
 model.eval()
 

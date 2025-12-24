@@ -1,0 +1,26 @@
+Copyright 2025 Yeray Espejo
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at:
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+Attribution:
+
+This project includes a fine-tuned version of DistilRoBERTa, originally developed by Hugging Face. "https://github.com/huggingface/transformers"
+
+Original DistilRoBERTa:
+Copyright 2018- The Hugging Face team. All rights reserved.
+Licensed under the Apache License, Version 2.0.
+
+Usage:
+
+You are free to use, modify, and distribute this work, provided that you comply with the Apache 2.0 License terms.
+However, prior notification to the author (Yeray Espejo, via yeray.espejo.pln@gmail.com) would be appreciated before using it .
